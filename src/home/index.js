@@ -5,7 +5,6 @@ import styles from "./hero.module.css";
 
 
 export default function HomePage() {
-  const { guildCount, serverMembers } = useSSG() as HomeProps;
 
   return (
     <Layout
