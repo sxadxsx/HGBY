@@ -2,56 +2,7 @@ import { GetStaticProps } from "next";
 import { useSSG } from "nextra/data";
 import styles from "./hero.module.css";
 
-export type HomeProps = {
-  serverMembers: number;
-  guildCount: number;
-};
 
-export const getStaticProps: GetStaticProps<{ ssg: HomeProps }> = async () => {
-  const { guildCount, serverMembers } = await fetchGuild().catch(() => ({
-    guildCount: 0,
-    serverMembers: 0,
-  }));
-
-  return {
-    props: {
-      ssg: {
-        serverMembers,
-        guildCount,
-      },
-    },
-    revalidate: 60,
-  };
-};
-
-export default function HomePage() {
-  const { guildCount, serverMembers } = useSSG() as HomeProps;
-
-  return (
-    import { GetStaticProps } from "next";
-import { useSSG } from "nextra/data";
-
-export type HomeProps = {
-  serverMembers: number;
-  guildCount: number;
-};
-
-export const getStaticProps: GetStaticProps<{ ssg: HomeProps }> = async () => {
-  const { guildCount, serverMembers } = await fetchGuild().catch(() => ({
-    guildCount: 0,
-    serverMembers: 0,
-  }));
-
-  return {
-    props: {
-      ssg: {
-        serverMembers,
-        guildCount,
-      },
-    },
-    revalidate: 60,
-  };
-};
 
 export default function HomePage() {
   const { guildCount, serverMembers } = useSSG() as HomeProps;
