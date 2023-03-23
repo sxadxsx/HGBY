@@ -35,14 +35,6 @@ export function IndexPage() {
               </span>
             </h1>
             <div className="button-wrap-hero">
-            <a
-                className="_6 w-inline-block"
-                data-w-id="d90f4fb2-2134-be56-aa63-3fe5d940d2aa"
-                href="#123"
-              >
-                        <ReactiveButton shadow size="large" idleText="我們的體育" />
-
-              </a>
             </div>
           </div>
         </div>
@@ -83,9 +75,7 @@ export function IndexPage() {
               </p>
             </div>
           
-            <a href="https://www.slbtw.cf/" target="_blank">
-    <ReactiveButton color="yellow" idleText="更多消息" />
-  </a>
+           
           </div>
         </div>
         <div className="column">
@@ -104,9 +94,7 @@ export function IndexPage() {
                 </strong>
               </p>
             </div>
-            <a href="https://www.sbatw.ml" target="_blank">
-    <ReactiveButton idleText="更多消息" />
-  </a>
+           
           </div>
         </div>
         <div className="column">
@@ -126,9 +114,7 @@ export function IndexPage() {
                 </strong>
               </p>
             </div>
-            <a href="/" target="_blank">
-    <ReactiveButton color="teal" idleText="更多消息" />
-  </a>
+            
           </div>
         </div>
       </div>
